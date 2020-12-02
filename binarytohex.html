@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoC</title>
+<link rel="stylesheet" type="text/css" href="style4.css">
+
+<section>
+  <nav>
+    <ul>
+      <li><h5><a href="index.html">Course</a></h5></li>
+      <li><h5><a href="project.html">Project</a></h5></li>
+	  <li><h5><a href="concepts.html">Concepts</a></h5></li>
+	  <li><h5><a href="database.html">Databases</a></h5></li>
+	  <li><h5><a href="documentation.html">Documentation</a></h5></li>
+      <li><h5><a href="aboutme.html">Dev Team</a></h5></li>
+    </ul>
+  </nav>
+
+<style>
+img {
+  float: left;
+ padding-right: 40px; 
+ padding-left: 40px;
+ padding-bottom: 40px;
+ 
+}
+</style>
+</head>
+<body style="background-color:#1D385F;">
+
+<section>
+<h2 style= "color:white">Project 1: Binary to Hexidecimal</h2>
+<hr>	
+
+
+<p><img src="bintohex.jpg"></p>
+        
+			
+         
+<input type="number" id="inputBin" value="">
+
+<p style= "color:white">Enter any 4 digit binary number:</p>
+
+<button onclick="binToHex()">Submit</button>
+
+<p style= "color:white">Hexidecimal Value : </p>
+<p id="demo"></p>
+
+<script>
+function binToHex() {
+  var x = document.getElementById("inputBin").value;
+  var hexOut = parseInt(x , 2).toString(16).toUpperCase();
+  document.getElementById("demo").innerHTML = hexOut;
+  }
+</script>
+
+
+
+</section>
+
+</body>
